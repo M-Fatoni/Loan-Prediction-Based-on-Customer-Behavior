@@ -8,8 +8,8 @@ Pada kolom income, data sudah terdistribusi secara uniform sehingga tidak diperl
 
 ## Multivariate Analaysis:
 Dari Visualisasi Heatmap, Terlihat bahwa fitur CURRENT_JOB_YRS dan Experience memiliki korelasi yang tinggi.
-Dengan menggunakan chi square test, fitur yang memiliki korelasi dengan Risk_Flag adalah Car_Ownership.
-Dengan menggunakan Metode Anova dan Pearson Correlation, Experience lah yang memiliki korelasi dengan Risk_Flag.
+Dengan menggunakan chi square test, fitur yang memiliki korelasi dengan Risk_Flag adalah  `Married/Single`, `House_Ownership`, `Car_Ownership`, `Profession`, `CITY`, `STATE`.
+Dengan menggunakan Metode Anova, fitur `Age`, `Experience`, `CURRENT_JOB_YRS`, `CURRENT_HOUSE_YRS` memiliki korelasi dengan Risk_Flag.
 Dari matriks korelasi antar fitur, tidak ada pola yang menarik yang terlihat. Hal ini menunjukkan bahwa tidak ada hubungan kuat antara fitur-fitur numerik tersebut. Oleh karena itu, tidak diperlukan tindakan khusus terhadap fitur-fitur numerik ini. fitur-fitur yang tidak memiliki korelasi kuat dengan Risk_Flag juga tidak perlu dibuang untuk saat ini karena walaupun kecil, masih ada sedikit informasi di dalamnya yang mungkin bisa digunakan nantinya.
 
 Namun, dari uji chi-square dan ANOVA, kita melihat bahwa Car_Ownership dan Experience memiliki hubungan yang signifikan dengan label (Risk_Flag). Ini berarti bahwa kepemilikan mobil dan pengalaman dapat menjadi faktor yang relevan dalam memprediksi risiko gagal bayar. Oleh karena itu, fitur Car_Ownership dan Experience mungkin perlu dipertimbangkan lebih lanjut dalam model prediksi risiko gagal bayar.
